@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.logo:hover{
+    color:rgb(2, 178, 113);
+}
+
+/* NAVIGATION */
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+  
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 4px;
+  background-color: #252525;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+.main{
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center; /* Horizontally center content in the main area */
+    gap: 60px; /* Optional: space between image and text */
+    padding: 40px;
+}
+
+.hero {
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.photo img {
+  max-height: 600px;
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: 0 0 0 5vh;  /* top right bottom left */
+  padding: 0;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo img:hover {
+  filter: grayscale(0%);
+}
+
+.photo {
+  position: relative;           /* anchor the pseudo-element */
+  display: inline-block;        /* shrink-wrap around the img  */
+  z-index: 1;  
+  flex-shrink: 0;                
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;                    
+  left: 10%;                   
+  background: #e3e3e3;         
+  z-index: 0;  
+  opacity: 40%;               
+  border-radius: 4px; 
+  width: 45vh; 
+  margin-left: 12vh;  
+}
+
+.sargam-title {
+  position: relative;
+  margin-bottom: 1vh;
+  top: 45%;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.main-title {
+  position: relative;
+  display: inline-block;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  font-weight: 1000;
+  color: #555;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  margin-top: 0vh;
+}
+.main-title:hover{
+    color: rgb(2, 178, 113);
+    transition: 0.3s ease;
+}
+
+.bottom-main{
+    text-align: center;
+}
+
+.right{
+    margin-right: 5vh;
+    position: absolute;
+    margin-left: 53vh;
+    top: 38%;
+    z-index: 1;
+    
+}
+
+.about {
+  background-color: #eee;
+  text-align: center;
+  padding: 50px 0px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #444;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about .highlight {
+  font-weight: 600;
+  color: #333;
+}
+
+.skills-section {
+  padding: 50px 0;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 16px; /* Optional for smooth look */
+  will-change: transform;
+}
+
+.skills-section:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background-color: #fafafa; /* Optional subtle background change */
+  z-index: 5;
+  position: relative;
+}
+
+
+.skills-section h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.skill img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-section {
+  padding: 60px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.experience-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.experience-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.experience-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  position: relative;
+}
+
+.experience-card .logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+.socbiz-text{
+    text-align: justify;
+    padding: 1vh;
+}
+.connect-section {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.connect-section h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1) drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.icons .insta{
+    width: 70px;
+    height: 70px;
+}
+
+footer{
+    text-align: center;
+    background-color: #252525;
+    color: #ffffff;
+    padding: 10px;
+}
+.experience-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
