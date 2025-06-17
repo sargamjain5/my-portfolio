@@ -13,8 +13,8 @@
       <a href="#" class="active">Home</a>
       <a href="#about-section">About me</a>
       <a href="#skills">Skills</a>
-      <a href="#">Experience</a>
-      <a href="#">Contact</a>
+      <a href="#experience">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   </header>
@@ -63,38 +63,57 @@
     </div>
 </section>
 
-<section class="experience-section">
-  <h2 class="experience-title">Experience</h2>
-  <div class="experience-cards">
-    <a href="https://sargamjain5.github.io/Socbiz-website/main.html" target="_blank" class="experience-card-link">
-    <div class="experience-card" style="background-color: #c7fbea;">
-      <img src="logo/Socbiz2 1.png" alt="SocBiz Logo" class="logo">
-      <h3>CONSULTANT, WEB DEVELOPER, DESIGNER</h3>
-      <p><strong>Society of Business, IITR</strong></p>
-      <div class = "socbiz-text">
-        <p>Designed and developed the official website for Society of Business (SocBiz), IIT Roorkee using HTML, CSS, Javascript and GitHub</p>
-      </div>
-    </div>
-    </a>
-    <div class="experience-card" style="background-color: #a997ff; color: rgb(0, 0, 0);">
-      <img src="logo/nss.png" alt="NSS Logo" class="logo">
-      <h3>MANAGEMENT & DESIGNER</h3>
-      <p><strong>National Service Scheme, IIT Roorkee</strong></p>
-      <div class = "socbiz-text"><p>Designed social media posts for National Social Submit</p></div>
+<section class="experience-section" id="experience">
+  <h2 class="experience-title">Projects</h2>
+  <div class="experience-wrapper">
+  
+    <!-- Project 1 -->
+    <div class="experience-card">
+      <a href="https://sargamjain5.github.io/Socbiz-website/main.html" target="_blank" class="experience-card-link">
+        <h3>Development & UI Design</h3>
+        <p><strong>Society of Business, IIT Roorkee</strong></p>
+        <div class="socbiz-text">
+          <p>Designed and developed the official website for Society of Business, IIT Roorkee. <br>Click Here to view the initial prototype!</p>
+          <img class="website-img" src="website.png" alt="SocBiz Website Screenshot">
+        </div>
+      </a>
     </div>
 
-    <div class="experience-card" style="background-color: #000000; color: rgb(255, 255, 255);">
-      <img src="assets/drams.png" alt="Dramatics Logo" class="logo">
-      <h3>CORE MEMBER</h3>
-      <p><strong>Dramatics Section IIT Roorkee</strong></p>
-      <div class = "socbiz-text">
-        <p>Performed in a STAGE PLAY: Panchali Phir Daav Par<br>Music & Scriptwriting: Republic day Duo-Act</p>
-      </div>
+    <!-- Project 2 -->
+    <div class="experience-card">
+      <a href="https://github.com/sargamjain5/Flight_Delay_Prediction" target="_blank" class="experience-card-link">
+        <h3>Analytics & Machine Learning</h3>
+        <p><strong>Flight Delay Prediction</strong></p>
+        <div class="socbiz-text">
+          <p>To tackle the flight delay prediction problem, I started by cleaning and preparing the dataset to make it ready for analysis. 
+            Then, I explored the data to understand the main factors contributing to delays—things like time of day, airline, and weather 
+            patterns. Using those insights, I built two machine learning models with Random Forest: one to classify whether a 
+            flight would be delayed by more than 15 minutes, and another to predict exactly how many minutes it might be delayed. <br>Click Here to view the project!</p>
+          <img class="website-img" src="Screenshot 2025-06-17 at 2.28.48 PM.png" alt="Flight Delay Prediction">
+        </div>
+      </a>
     </div>
+
+        <!-- Project 3 -->
+    <div class="experience-card">
+      <a href="https://github.com/sargamjain5/Underperforming_food_courts" target="_blank" class="experience-card-link">
+        <h3>Consultancy</h3>
+        <p><strong>Underperforming Food Courts</strong></p>
+        <div class="socbiz-text">
+          <p>This consulting project addresses low conversion rates in Tier-2 city food courts despite recovering mall footfall 
+            (90% of pre-COVID levels). Key issues include high prices, poor hygiene, slow service, and misaligned offerings. 
+            <br>Click Here to view the project!</p>
+          <img class="assets/website.png" src="Consult.png" alt="consult">
+        </div>
+      </a>
+    </div>
+
 
   </div>
 </section>
-<section class="connect-section">
+
+
+<section class="connect-section" id="contact">
   <h2>Connect with me</h2>
   <div class="icons">
     <a href="https://instagram.com/isargamjain" target="_blank">
@@ -105,6 +124,9 @@
     </a>
     <a href="mailto:isargam.work@gmail.com">
       <img src="logo/mail.png" alt="Gmail" />
+    </a>
+      <a href="https://github.com/sargamjain5">
+      <img src="logo/Github.png" alt="Git" />
     </a>
   </div>
 </section>
