@@ -65,7 +65,7 @@ nav a.active::after {
   justify-content: center;
   min-height: 600px;
   padding: 40px;
-  gap: 60px;
+  gap: 120px;
 }
 .hero {
   position: relative;
