@@ -7,8 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <div class="logo"><b>PORTFOLIO</b></div>
+
+    <!-- Hamburger for mobile -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <nav>
       <a href="#" class="active">Home</a>
       <a href="#about-section">About me</a>
@@ -17,43 +26,37 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  </header>
 
   <section class="hero">
-    <div class = "main">
-        <div class="photo">
+    <div class="main">
+      <div class="photo">
         <img src="assets/myimg.png" alt="Sargam Photo" />
+      </div>
+      <div class="right">
+        <img src="assets/text_sargam.png" alt="Sargam's" class="sargam-title" />
+        <h1 class="main-title"><b>PORTFOLIO</b></h1>
+        <div class="bottom-main">
+          <div class="discover">Discover more</div>
+          <div class="arrow">⌄</div>
         </div>
-
-        <div class = "right"> 
-            <img src="assets/text_sargam.png" alt="Sargam's" class="sargam-title" />
-            <h1 class="main-title"><b>PORTFOLIO</b></h1>
-            <div class = "bottom-main">
-                <div class="discover">Discover more</div>
-                <div class="arrow">⌄</div>
-            </div>
-        </div>
-        
+      </div>
     </div>
   </section>
 
-<section class="about" id="about-section">
-  <h2>About me</h2>
-  <p>
-    I am Sargam Jain, currently pursuing Btech. in Biosciences and Bioengineering, from IIT Roorkee.
-    Growing up, I was always curious about tech, how everything works? Fast-forward to the present,
-    when I am creating and learning new verticals in tech. I also have interest in film-making, scripting and acting.
-  </p>
-  <p class="highlight">
-   <i>A creative mind with a business edge — I'm currently exploring the intersections of design, technology, and storytelling.</i> 
-  </p>
-</section>
+  <section class="about" id="about-section">
+    <h2>About me</h2>
+    <p>
+      I am Sargam Jain, currently pursuing BTech in Biosciences and Bioengineering from IIT Roorkee.
+      Growing up, I was always curious about tech—how everything works. Fast-forward to the present,
+      I am creating and learning new verticals in tech. I also have interest in film-making, scripting, and acting.
+    </p>
+    <p class="highlight">
+      <i>A creative mind with a business edge — I'm currently exploring the intersections of design, technology, and storytelling.</i>
+    </p>
+  </section>
 
-<section class="skills-section" id = "skills">
-    <div>
-        <h1>Skills</h1>
-    </div>
-    
+  <section class="skills-section" id="skills">
+    <h1>Skills</h1>
     <div class="skills-container">
       <div class="skill"><img src="logo/Figma-logo.svg.png" alt="Figma"></div>
       <div class="skill"><img src="logo/html.svg.png" alt="HTML5"></div>
@@ -61,107 +64,84 @@
       <div class="skill"><img src="logo/imovie.png" alt="iMovie"></div>
       <div class="skill"><img src="logo/python.svg.png" alt="Python"></div>
     </div>
-</section>
+  </section>
 
-<section class="experience-section" id="experience">
-  <h2 class="experience-title">Projects</h2>
-  <div class="experience-wrapper">
-  
-    <!-- Project 1 -->
-    <div class="experience-card">
-      <a href="https://sargamjain5.github.io/Socbiz-website/main.html" target="_blank" class="experience-card-link">
-        <h3>Development & UI Design</h3>
-        <p><strong>Society of Business, IIT Roorkee</strong></p>
-        <div class="socbiz-text">
-          <p>Designed and developed the official website for Society of Business, IIT Roorkee. <br>Click Here to view the initial prototype!</p>
-          <img class="website-img" src="assets/website.png" alt="SocBiz Website Screenshot">
-        </div>
-      </a>
+  <section class="experience-section" id="experience">
+    <h2 class="experience-title">Projects</h2>
+    <div class="experience-wrapper">
+
+      <div class="experience-card">
+        <a href="https://sargamjain5.github.io/Socbiz-website/main.html" target="_blank" class="experience-card-link">
+          <h3>Development & UI Design</h3>
+          <p><strong>Society of Business, IIT Roorkee</strong></p>
+          <div class="socbiz-text">
+            <p>Designed and developed the official website for Society of Business, IIT Roorkee.</p>
+            <img class="website-img" src="assets/website.png" alt="SocBiz Website Screenshot">
+          </div>
+        </a>
+      </div>
+
+      <div class="experience-card">
+        <a href="https://github.com/sargamjain5/Flight_Delay_Prediction" target="_blank" class="experience-card-link">
+          <h3>Analytics & Machine Learning</h3>
+          <p><strong>Flight Delay Prediction</strong></p>
+          <div class="socbiz-text">
+            <p>Built ML models to predict and classify flight delays using Random Forest and feature analysis.</p>
+            <img class="website-img" src="assets/ML.png" alt="Flight Delay Prediction">
+          </div>
+        </a>
+      </div>
+
+      <div class="experience-card">
+        <a href="https://github.com/sargamjain5/Underperforming_food_courts" target="_blank" class="experience-card-link">
+          <h3>Consultancy</h3>
+          <p><strong>Underperforming Food Courts</strong></p>
+          <div class="socbiz-text">
+            <p>Analyzed low conversion rates in Tier-2 food courts; identified causes like pricing, hygiene, and service speed.</p>
+            <img class="website-img" src="assets/Consult.png" alt="consult">
+          </div>
+        </a>
+      </div>
+
+      <div class="experience-card">
+        <a href="https://drive.google.com/file/d/1g-EplA6OIB6MA9XoUKb44jCcm5OuTU8S/view?usp=sharing" target="_blank" class="experience-card-link">
+          <h3>Consultancy</h3>
+          <p><strong>Industry Analysis: E-Commerce</strong></p>
+          <div class="socbiz-text">
+            <p>Explored India’s e-commerce market with SWOTs on Amazon, Flipkart, Nykaa, and others.</p>
+            <img class="website-img" src="assets/Industry%20Analysis.png" alt="Industry Analysis">
+          </div>
+        </a>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Project 2 -->
-    <div class="experience-card">
-      <a href="https://github.com/sargamjain5/Flight_Delay_Prediction" target="_blank" class="experience-card-link">
-        <h3>Analytics & Machine Learning</h3>
-        <p><strong>Flight Delay Prediction</strong></p>
-        <div class="socbiz-text">
-          <p>To tackle the flight delay prediction problem, I started by cleaning and preparing the dataset to make it ready for analysis. 
-            Then, I explored the data to understand the main factors contributing to delays—things like time of day, airline, and weather 
-            patterns. Using those insights, I built two machine learning models with Random Forest: one to classify whether a 
-            flight would be delayed by more than 15 minutes, and another to predict exactly how many minutes it might be delayed. <br>Click Here to view the project!</p>
-          <img class="website-img" src="assets/ML.png" alt="Flight Delay Prediction">
-        </div>
+  <section class="connect-section" id="contact">
+    <h2>Connect with me</h2>
+    <div class="icons">
+      <a href="https://instagram.com/isargamjain" target="_blank">
+        <img class="insta" src="logo/Insta.png" alt="Instagram" />
       </a>
-    </div>
-
-        <!-- Project 3 -->
-    <div class="experience-card">
-      <a href="https://github.com/sargamjain5/Underperforming_food_courts" target="_blank" class="experience-card-link">
-        <h3>Consultancy</h3>
-        <p><strong>Underperforming Food Courts</strong></p>
-        <div class="socbiz-text">
-          <p>This consulting project addresses low conversion rates in Tier-2 city food courts despite recovering mall footfall 
-            (90% of pre-COVID levels). Key issues include high prices, poor hygiene, slow service, and misaligned offerings. 
-            <br>Click Here to view the project!</p>
-          <img class="website-img" src="assets/Consult.png" alt="consult">
-        </div>
+      <a href="https://www.linkedin.com/in/isargam-jain/" target="_blank">
+        <img src="logo/linkedin.png" alt="LinkedIn" />
       </a>
-    </div>
-    
-    <!--Project-4--->
-    <div class="experience-card">
-      <a href="https://drive.google.com/file/d/1g-EplA6OIB6MA9XoUKb44jCcm5OuTU8S/view?usp=sharing" target="_blank" class="experience-card-link">
-        <h3>Consultancy</h3>
-        <p><strong>Industry Analysis: E-Commerce</strong></p>
-        <div class="socbiz-text">
-          <p>This project presents a comprehensive analysis of the e-commerce industry, with a particular focus on the Indian and global digital retail landscape. 
-            The study explores how technology, consumer behavior, market segmentation, and competitive dynamics shape the evolution of online commerce.
-            Through a combination of market data, business model evaluation, value chain analysis, and user personas, the report examines key players such as Amazon, Flipkart, 
-            Nykaa, Myntra, and Meesho, uncovering their strengths, innovations, and strategic differences.
-            <br>Click Here to view the project!</p>
-          <img class="website-img" src="assets/Industry%20Analysis.png" alt="consult">
-        </div>
+      <a href="mailto:isargam.work@gmail.com">
+        <img src="logo/mail.png" alt="Gmail" />
       </a>
-
-
-  </div>
-</section>
-
-
-<section class="connect-section" id="contact">
-  <h2>Connect with me</h2>
-  <div class="icons">
-    <a href="https://instagram.com/isargamjain" target="_blank">
-      <img class = "insta" src="logo/Insta.png" alt="Instagram" />
-    </a>
-    <a href="https://www.linkedin.com/in/isargam-jain/" target="_blank">
-      <img src="logo/linkedin.png" alt="LinkedIn" />
-    </a>
-    <a href="mailto:isargam.work@gmail.com">
-      <img src="logo/mail.png" alt="Gmail" />
-    </a>
       <a href="https://github.com/sargamjain5">
-      <img src="logo/Github.png" alt="Git" />
-    </a>
-  </div>
-</section>
+        <img src="logo/Github.png" alt="GitHub" />
+      </a>
+    </div>
+  </section>
 
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2025 Sargam Jain. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-  <script>
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-      });
-    });
-  </script>
-  
 </body>
-<footer>
-    <div class="footer-bottom"><p>
-    © 2025 Sargam Jain. All rights reserved.</p>
-  </div>
-</footer>
 </html>
+
